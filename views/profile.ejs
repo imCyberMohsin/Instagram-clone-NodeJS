@@ -30,8 +30,9 @@
         <h3 class="text-lg mb-1"><%= user.name %></h3>
         <p class="text-xs tracking-tight opacity-50"><%= user.bio %></p>
       </div>
-      <div class="px-6 mt-5">
+      <div class="px-6 mt-5 flex justify-between">
         <a class="px-3 py-2 bg-zinc-800 text-xs rounded-md" href="/edit">Edit Profile</a>
+        <a class="px-3 py-2 bg-red-600 text-xs rounded-md" href="/logout">Logout</a>
       </div>
       <div class="posts w-full flex gap-1 py-2 mt-5 flex-wrap">
         <% user.posts.forEach((post)=> { %>
